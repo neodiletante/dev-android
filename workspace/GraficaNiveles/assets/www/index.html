@@ -1,0 +1,25 @@
+<html>
+  <head>
+	<script type="text/javascript" charset="utf-8" src="phonegap.0.9.5.min.js"></script>
+	<script type="text/javascript" src="FusionCharts.js"></script>
+	<script type="text/javascript" src="flash_detect_min.js"></script>
+  </head>
+  <body>
+      <div id="chartdiv" align="center" style="border:1px dashed #008800; visibility:visible !important;">
+        <script type="text/javascript"><!--
+        	
+        	document.getElementById("chartdiv").innerHTML = ["Flash Installed: ",FlashDetect.installed? "<font color='green'><b>YES</b></font>":"<font color='red'><b>NO</b></font>",
+        		" Name: ", FlashDetect.raw , "(major:", FlashDetect.major, ", minor:", FlashDetect.minor, ")"].join("");
+        	if(FlashDetect.installed)
+        	{
+				//FusionCharts.setCurrentRenderer('javascript');
+	            var chart = new FusionCharts("Pie2D.swf?dataURL=Data.xml", "ChartId", "560", "400", "0", "1");
+	            chart.setDataURL("data.xml");
+	            chart.render("chartdiv");
+            }
+        // -->
+        </script>
+  	    <p>&copy; FusionCharts</p>    	
+      </div>
+  </body>
+</html>

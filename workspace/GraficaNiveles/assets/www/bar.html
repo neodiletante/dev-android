@@ -1,0 +1,30 @@
+<html>
+  <head>
+	<script type="text/javascript" charset="utf-8" src="phonegap.0.9.5.min.js"></script>
+	<script type="text/javascript" src="FusionCharts.js"></script>
+	<script type="text/javascript" src="flash_detect_min.js"></script>
+  </head>
+  <body>
+      <div id="chartdiv" align="center" style="border:1px dashed #008800; visibility:visible !important;">
+        Aqui debe cargarse la grafica
+        <script type="text/javascript">                                               
+          var st_Value = 92;
+          var myChart = new FusionCharts("HLinearGauge.swf", "myChartId", "200", "100", "0", "1");
+          myChart.setXMLData("<chart lowerLimit='0' upperLimit='100' lowerLimitDisplay='Bad' " +
+          "upperLimitDisplay='Good' numberSuffix='%' showValue='1'>" +
+          "<colorRange>" +
+          "<color minValue='0' maxValue='75' code='FF654F'/>" +
+          "<color minValue='75' maxValue='90' code='F6BD0F'/>" +
+          "<color minValue='90' maxValue='100' code='8BBA00'/>" +
+          "</colorRange>" +
+          "<dials>" +
+          //"<dial value='92'/>" +
+          "<dial value='" + st_Value + "'/>" +
+          "</dials>" +
+          "</chart>");
+          myChart.render("chartdiv");
+        </script>
+  	    <p>&copy; FusionCharts</p>    	
+      </div>
+  </body>
+</html>

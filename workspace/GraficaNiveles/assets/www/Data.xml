@@ -1,0 +1,6 @@
+<chart caption="FusionCharts in native Android Application" subCaption="bet you like it!" showLegend="1" bgColor='FFFFFF' bgAlpha='100'>
+	<set label="FusionCharts" value="232400"/>
+	<set label="PowerCharts" value="339800"/>
+	<set label="FusionMaps" value="411900"/>
+	<set label="FusionWidgets" value="398400"/>
+</chart>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GraficaNivelesActivity!</string>
+    <string name="app_name">GraficaNiveles</string>
+    <string name="push">Next</string>
+</resources>
